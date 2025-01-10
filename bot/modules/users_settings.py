@@ -421,7 +421,7 @@ async def update_user_settings(query):
         button
     ) = await get_user_settings(query.from_user)
     user_id = query.from_user.id
-    tpath = "https://vault.pictures/p/8794d18c21d24a20a87db164ee1debc5"
+    tpath = "https://te.legra.ph/file/6e3218d002d83ae45d2fc.jpg"
     media = (
         f"Thumbnails/{user_id}.jpg"
         if os_path.exists(f"Thumbnails/{user_id}.jpg")
@@ -450,7 +450,7 @@ async def user_settings(client, message):
         msg,
         button
     ) = await get_user_settings(from_user)
-    tpath = "https://vault.pictures/p/8794d18c21d24a20a87db164ee1debc5"
+    tpath = "https://te.legra.ph/file/6e3218d002d83ae45d2fc.jpg"
     media = (
         f"Thumbnails/{user_id}.jpg"
         if os_path.exists(f"Thumbnails/{user_id}.jpg")
