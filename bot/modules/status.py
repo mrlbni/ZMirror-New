@@ -1,4 +1,4 @@
-%from aiofiles.os import path as aiopath
+from aiofiles.os import path as aiopath
 from datetime import datetime as dt
 from httpx import AsyncClient as xclient
 from psutil import (
