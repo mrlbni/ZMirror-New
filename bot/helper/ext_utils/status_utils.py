@@ -203,7 +203,7 @@ async def get_readable_message(
         status="All",
         page_step=1
     ):
-    msg = "<pre><b><a href='https://t.me/Rulf_Encoder'>Pᴏᴡᴇʀᴅ ʙʏ ʀᴜʟғ 🍻</a></b></pre>\n"
+    msg = "<pre><b>Pᴏᴡᴇʀᴅ Bʏ Rᴜʟғ 🍻</b></pre>\n"
     button = None
 
     tasks = await sync_to_async(
