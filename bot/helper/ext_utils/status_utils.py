@@ -203,7 +203,7 @@ async def get_readable_message(
         status="All",
         page_step=1
     ):
-    msg = "<a href='https://t.me/Rulf_Encoder'>Pᴏᴡᴇʀᴅ ʙʏ ʀᴜʟғ 🍻</a>\n"
+    msg = "<pre><b><a href='https://t.me/Rulf_Encoder'>Pᴏᴡᴇʀᴅ ʙʏ ʀᴜʟғ 🍻</a></b></pre>\n"
     button = None
 
     tasks = await sync_to_async(
@@ -264,8 +264,7 @@ async def get_readable_message(
         #     )
 
         msg += (
-            f"\n<pre>#{index + start_position}(Processing)</pre>\n"
-            f"Filename: {escape(f"{task.name()}")}\n"
+            f"#{index + start_position} Filename: {escape(f"{task.name()}")}\n"
         )
         if tstatus not in [
             MirrorStatus.STATUS_SEEDING,
