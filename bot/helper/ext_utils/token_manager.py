@@ -235,7 +235,7 @@ async def start(client, message):
     reply_markup = buttons.build_menu(2)
     await client.send_photo(
         chat_id=message.chat.id,
-        photo="/usr/src/app/Rulf.jpg",
+        photo="/usr/src/app/leosplash.png",
         caption=start_string,
         reply_markup=reply_markup
     )
