@@ -205,7 +205,7 @@ async def start(client, message):
     ):
         start_string = 'Bot Started.\n' \
                        'Now I will send all of your stuffs here.\n' \
-                       'Use me at: @JetMirror \n' \
+                       'Use me at: @Rulf_Encoder\n' \
                        'Repo: @Z_Mirror'
     elif (
         not config_dict["DM_MODE"]
@@ -230,13 +230,11 @@ async def start(client, message):
         start_string = "Start me in DM, not in the group.\n" \
                        f"cc: {tag}"
     buttons = ButtonMaker()
-    buttons.url_button("Join Channel 🚀", "https://t.me/JetMirror", position="header")
-    buttons.url_button("Owner ☀️", "https://t.me/hrishikesh2861", position="header")
-    buttons.url_button("Repo 🌐", "https://github.com/Hrishi2861/Z-Mirror-Modified", position="footer")
-    reply_markup = buttons.build_menu(3)
+    buttons.url_button("UPDATES 🌐", "https://t.me/Rulf_Encoder", position="header")
+    buttons.url_button("OWNER 👨‍💻", "https://t.me/cmd_rulf", position="header")
+    reply_markup = buttons.build_menu(2)
     await client.send_photo(
         chat_id=message.chat.id,
-        photo="/usr/src/app/Jet.jpg",
         caption=start_string,
         reply_markup=reply_markup
     )
