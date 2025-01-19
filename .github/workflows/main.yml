@@ -2,7 +2,7 @@ name: aptible
 
 on:
   push:
-    branches: [hk_jd_deploy]
+    branches: [master]
   workflow_dispatch: {}
 
 jobs:
